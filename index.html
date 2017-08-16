@@ -14,7 +14,7 @@
 
 
 	<!-- _______________FIRST PAGE__________________ -->
-	<section class="first-page">
+	<section class="first-page" id="home">
 
 		<!-- navigation bar -->
 		<div class="main-navbar">
@@ -37,12 +37,11 @@
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 					      <ul class="nav navbar-nav main-navbar-links">
-					        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-					        <li ><a href="#">Home</a></li>
-					        <li><a href="#">About</a></li>
-					        <li><a href="#">Igredients</a></li>
-					        <li><a href="#">Reviews</a></li>
-					        <li><a href="#">Reservations</a></li>
+					        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					        <li><a href="#about">About</a></li>
+					        <li><a href="#ingredients">Ingredients</a></li>
+					        <li><a href="#reviews">Reviews</a></li>
+					        <li><a href="#reservations">Reservations</a></li>
 					      </ul>
 								
 
@@ -50,9 +49,9 @@
 									<li class="dropdown navbar-right">
 					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social<span class="caret"></span></a>
 					          <ul class="dropdown-menu">
-					            <li><a href="#"><img src="img/firstPage/twitter.png" alt="twitter"></a></li>
-					            <li><a href="#"><img src="img/firstPage/youtube.png" alt="youtube"></a></li>
-					            <li><a href="#"><img src="img/firstPage/facebook.png" alt="facebook"></a></li>
+					            <li><a href="https://twitter.com/"><img src="img/firstPage/twitter.png" alt="twitter"></a></li>
+					            <li><a href="https://www.youtube.com/"><img src="img/firstPage/youtube.png" alt="youtube"></a></li>
+					            <li><a href="https://www.facebook.com/"><img src="img/firstPage/facebook.png" alt="facebook"></a></li>
 					          </ul>
 					        </li>
 					      </div>
@@ -70,8 +69,8 @@
 			<div class="jumbotron">
 				<h1>the right ingredients<br>for the right food</h1>
 				<div class="jumbotron-divider"><!-- <img src="img/firstPage/divider.png"> --></div>
-				<button class="button button-book"><a href="#" role="button">book table</a></button>
-				<button class="button button-menu"><a href="#" role="button">see the menu</a></button>
+				<button class="button button-book"><a href="#reservations" role="button">book table</a></button>
+				<button class="button button-menu"><a href="#menu" role="button">see the menu</a></button>
 			</div>
 		</div> <!-- container end -->
 	</section>
@@ -79,7 +78,7 @@
 
 
 	<!-- _______________SECOND PAGE__________________ -->
-	<section class="second-page">
+	<section class="second-page" id="about">
 		<div class="container">
 			<div class="row">
 
@@ -104,7 +103,7 @@
 
 
 	<!-- _______________THIRD PAGE__________________ -->
-	<section class="third-page">
+	<section class="third-page" id="ingredients">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6"></div>
@@ -128,7 +127,7 @@
 
 
 	<!-- _______________FOURTH PAGE__________________ -->
-	<section class="fourth-page">
+	<section class="fourth-page" id="menu">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-1"></div>
@@ -225,7 +224,7 @@
 
 
 	<!-- _______________FIFTH PAGE__________________ -->
-<section class="fifth-page">
+<section class="fifth-page" id="reviews">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
@@ -242,9 +241,10 @@
 
 
 <!-- _______________SIXTH PAGE__________________ -->
-<section class="sixth-page">
+<section class="sixth-page" id="reservations">
 	<div class="container">
 		<div class="row">
+
 			<div class="col-lg-3">
 			<img class="sixth-page-img" height="507" width="270" src="img/sixthPage/saucer.jpg" alt="saucer">
 			</div>
@@ -265,7 +265,7 @@
 
 							  <div class="form-group">
 							    <label for="text">Name:</label>
-							    <input type="text" class="form-control" id="name">
+							    <input type="text" class="form-control" id="name" placeholder="your name *">
 							  </div>
 						
 							</div>
@@ -273,7 +273,7 @@
 
 								<div class="form-group">
 							    <label for="text">Email:</label>
-							    <input type="email" class="form-control" id="email">
+							    <input type="email" class="form-control" id="email" placeholder="your email *">
 							  </div>
 
 							</div>
@@ -283,7 +283,7 @@
 
 								<div class="form-group">
 							    <label for="text">Date:</label>
-							    <input type="text" class="form-control" id="date">
+							    <input type="text" class="form-control" id="date" placeholder="date *">
 							  </div>
 
 							</div>
@@ -291,17 +291,15 @@
 	
                 <div class="form-group">
 							    <label for="text">Party Number:</label>
-							    <input type="text" class="form-control" id="party-number">
+							    <input type="text" class="form-control" id="party-number" placeholder="party number *">
 							  </div>
 
 							</div>
 						</div>
 						<input type="submit" value="Book Now!" class="order">		
-					</form>
-				
+					</form>				
 				</article>
 			</div>
-
 
 		</div>
 	</div>
@@ -310,7 +308,7 @@
 
 
 <!-- _______________SEVENTH PAGE__________________ -->
-<section class="seventh-page">
+<footer class="seventh-page">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
@@ -325,9 +323,9 @@
 					<h2>Opening Hours</h2>
 					<img src="img/sevenPage/divider.png" alt="">
 					<p>
-						Mon-Thu: 7:00am-8:00pm
+						<b>Mon-Thu:</b> 7:00am-8:00pm
 						<br>
-						Fri-Sun: 7:00am-10:00pm
+						<b>Fri-Sun:</b> 7:00am-10:00pm
 					</p>
 				</article>
 			</div>
@@ -336,15 +334,15 @@
 					<h2>Our Location</h2>
 					<img src="img/sevenPage/divider.png" alt="">
 					<p>
-						19th Paradise Street Sitia
+						<b>19th Paradise Street Sitia</b>
 						<br>
-						128 Meserole Avenue
+						<b>128 Meserole Avenue</b>
 					</p>
 				</article>
 			</div>
 		</div>
 	</div>
-</section>
+</footer>
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>

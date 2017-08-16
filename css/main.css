@@ -240,9 +240,8 @@ body {
     text-align: center; }
     .sixth-page .right-food h2 {
       margin-top: 0;
-      color: #cc9900; }
-    .sixth-page .right-food p {
-      color: #4c4c4c; }
+      color: #cc9900;
+      font-family: "Yeseva One", cursive; }
   .sixth-page form {
     text-align: left;
     margin-top: 35px;
