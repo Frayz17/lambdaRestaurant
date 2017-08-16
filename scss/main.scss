@@ -1,0 +1,385 @@
+// ----------VARIABLES-----------
+$primary-color-white: #f6f6f6;
+$primary-color-black: #4c4c4c;
+$primary-color-gold: #cc9900;
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+$yeseva: 'Yeseva One', cursive;
+$lato: 'Lato', sans-serif;
+$Gentium: 'Gentium Book Basic', serif;
+
+body {
+	color: $primary-color-white;
+	font-family:	$yeseva;
+}
+
+
+
+// -------------------FIRST PAGE---------------------
+
+.first-page {
+	width: 100%;
+	background-image: url("../img/firstPage/bg.jpg");
+	background-size: cover;
+	padding-bottom: 140px;
+
+	.container {
+		width: 1200px;
+	}
+
+	.logo {
+		margin-top: 20px;
+	}
+
+  .col-sm-9 {
+  	padding-right: 0px;
+  }
+	.nav-ul-list {
+		list-style-type: none;
+		margin-left: 10%;
+    padding: 0px;
+    overflow: hidden;
+    align: center;
+	
+
+		li {
+			font-size: 21px;
+			padding: 20px;
+			padding-top: 50px;
+			float: left;
+		}
+		li:last-child {
+ 		 padding-right: 0px;
+ 		 margin-right: 0px;
+		}
+	}
+
+	.social-icons {
+		min-width: 200px;
+		a {
+			padding: 5px;
+			margin-right: 0px;
+			margin-top: 50px;
+			float: left;
+		}
+		a:first-child, a:last-child  {
+ 		 padding-right: 0px;
+ 		 margin-right: 0px;
+		}
+	}
+
+	.jumbotron {
+		background: none;
+		margin-top: 70px;
+		text-align: center;
+
+		h1 {
+			font-size: 90px;
+			line-height: 130%;
+		}
+		.jumbotron-divider {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		
+		.button {
+   		border: none;
+    	color: white;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 4px 30px;
+    	cursor: pointer;
+    	width: 225px;
+    	height: 55px;
+    	
+    	a {
+    		color: $primary-color-white;
+    		text-transform: uppercase;
+    		text-decoration: none;
+    	}
+		}
+
+		.button:focus {
+	    	outline: none;
+	  }
+		.button-book {
+			border: 1px solid black;
+			//padding: 15px 32px;
+			background: rgba(0, 0, 0, 0.7);
+		}
+		.button-menu {
+			border: 1px solid white;
+			//padding: 15px 32px;
+			background: rgba(170, 170, 170, 0.7);
+		}
+		
+	}
+}
+
+
+
+// -------------------SECOND PAGE---------------------
+
+.second-page {
+	background-image: url("../img/secondPage/bg.jpg");
+	width: 100%;
+	background-size: cover;
+
+	.second-page-food {
+		text-align: center;
+
+		h1 {
+			color: $primary-color-gold;
+			margin-top: 110px;
+			font-size: 36px;
+		}
+		.second-page-divider{
+			margin-top: 15px;
+			margin-bottom: 32px;
+		}
+		p {
+			color: $primary-color-black;
+			font-size: 16px;
+		}
+		.second-page-cook {
+			margin-top: 53px;
+			padding-left: 75px;
+		}
+  }
+	.dish-img {
+		margin-top: 75px;
+		margin-bottom: 85px;
+	}
+}
+
+
+
+// -------------------THIRD PAGE---------------------
+
+.third-page {
+	background-image: url("../img/thirdPage/bg.jpg");
+	width: 100%;
+	background-size: cover;
+
+	.third-page-ingredients {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.7);
+		margin-top: 100px;
+		margin-bottom: 100px;
+
+		h1{
+			padding-top: 80px;
+		}
+
+		.third-page-divider {
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 16px;
+			padding: 0 80px;
+			margin-bottom: 75px;
+		}
+
+		.img-ingredients {
+			margin: 0 15px;
+			margin-bottom: 75px;
+		}
+	}
+}
+
+
+
+// -------------------FOURTH PAGE---------------------
+
+.fourth-page {
+	background-image: url("../img/fourthPage/bg.jpg");
+	background-size: cover;
+	color: $primary-color-gold;
+	
+	.container {
+		padding: 100px 0;
+	}
+
+	h2 {
+		font-size: 36px;
+		text-align: center;
+	}
+	h3 {
+		font-size: 21px;
+	}
+	img {
+	  display: block;
+	  margin: 0 auto;		
+	}
+	.price {
+		float: right;
+	}
+
+	hr {
+		margin-left: auto;
+		margin-right: auto;
+		height: 1px;
+		background-color: white;
+		color: white;
+		border: 0 none;
+    box-shadow: inset 0 12px 12px -12px rgba(204, 153, 0, 0.9);
+	}
+
+	p {
+		font-size: 16px;
+		font-family: $lato;
+		color: $primary-color-black;
+		margin-bottom: 40px;
+	}
+	
+	.special-word-wrapper
+	{
+		text-align: right;
+	}
+	.special-word {
+		background-image: url("../img/fourthPage/bgSpecial.jpg");
+		padding: 3px 3px 0 3px;
+		color: $primary-color-white;
+	}
+	.special-box {
+		//width: 99%
+		h3 {
+			margin-top: 0px;
+		}
+		padding: 0 2px;
+		-webkit-box-shadow:-3px 0px 3px 1px #cc9900 ;
+		-moz-box-shadow:-3px 0px 3px 1px #cc9900 ;
+		box-shadow:-3px 0px 3px 1px #cc9900 ;
+
+	}
+
+}
+
+
+
+// -------------------FIFTH PAGE---------------------
+
+.fifth-page {
+	background-image: url("../img/fifthPage/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeate;
+	color: $primary-color-white;
+	article {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.7);
+		padding-top: 85px;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		h2 {
+			font-size: 36px;
+		}
+		img {
+			margin: 25px 0;
+		}
+		.quote {
+			//font-size: 96px;
+			font-family: Georgia;
+		}
+		.quote-phrase {
+			padding-bottom: 45px;
+			font-family: $Gentium;
+			font-size: 25px;
+			padding: 0 70px;
+		}
+		.food-inc {
+			margin-top: 45px;
+			padding-bottom: 100px;
+		}
+
+	}
+}
+
+
+
+// -------------------SIXTH PAGE---------------------
+.sixth-page {
+	background-image: url("../img/sixthPage/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeate;
+	color: $primary-color-black;
+	.container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.divider {
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+	.no-padding {
+		// margin: 0;
+		padding: 0;
+	}
+
+	.right-food {
+		padding-top: 0;
+		text-align: center;
+		h2 {
+			margin-top: 0;
+			color: $primary-color-gold;
+		}
+		p {
+			color: $primary-color-black;
+		}		
+	}
+
+	form {
+			text-align: left;
+			margin-top: 35px;
+			margin-bottom: 0;
+			color: $primary-color-gold;
+			input::placeholder {
+				color: #7c7c7c;
+				padding-left: 8px;
+				
+			}
+	}
+
+	.form-row {
+		margin-bottom: 30px;
+	}
+
+	.order {
+		margin: 0 auto;
+		padding: 8px 60;
+		display: block;
+		margin-top: 60px;
+		background-color: #c9a131;
+		color: $primary-color-white;
+		border: none;
+		font-size: 16px;
+	}
+}
+
+
+
+// -------------------SEVENTH PAGE---------------------
+.seventh-page {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background-color: #191919;
+	color: #fefefe;
+	text-align: center;
+	p {
+		font-size: 14px;
+		font-family: $lato;
+	}
+	h2 {
+		font-size: 21px;
+	}
+	img {
+		max-width: 100%;
+		margin: 15px 0;
+	}
+}

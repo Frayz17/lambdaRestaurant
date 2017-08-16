@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Gentium+Book+Basic");
+body {
+  color: #f6f6f6;
+  font-family: "Yeseva One", cursive; }
+
+.first-page {
+  width: 100%;
+  background-image: url("../img/firstPage/bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-bottom: 140px; }
+  .first-page .container {
+    width: 1200px; }
+  .first-page .logo {
+    margin-top: 20px; }
+  .first-page .col-sm-9 {
+    padding-right: 0px; }
+  .first-page .nav-ul-list {
+    list-style-type: none;
+    margin-left: 10%;
+    padding: 0px;
+    overflow: hidden;
+    align: center; }
+    .first-page .nav-ul-list li {
+      font-size: 21px;
+      padding: 20px;
+      padding-top: 50px;
+      float: left; }
+    .first-page .nav-ul-list li:last-child {
+      padding-right: 0px;
+      margin-right: 0px; }
+  .first-page .social-icons {
+    min-width: 200px; }
+    .first-page .social-icons a {
+      padding: 5px;
+      margin-right: 0px;
+      margin-top: 50px;
+      float: left; }
+    .first-page .social-icons a:first-child, .first-page .social-icons a:last-child {
+      padding-right: 0px;
+      margin-right: 0px; }
+  .first-page .jumbotron {
+    background: none;
+    margin-top: 70px;
+    text-align: center; }
+    .first-page .jumbotron h1 {
+      font-size: 90px;
+      line-height: 130%; }
+    .first-page .jumbotron .jumbotron-divider {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .first-page .jumbotron .button {
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 30px;
+      cursor: pointer;
+      width: 225px;
+      height: 55px; }
+      .first-page .jumbotron .button a {
+        color: #f6f6f6;
+        text-transform: uppercase;
+        text-decoration: none; }
+    .first-page .jumbotron .button:focus {
+      outline: none; }
+    .first-page .jumbotron .button-book {
+      border: 1px solid black;
+      background: rgba(0, 0, 0, 0.7); }
+    .first-page .jumbotron .button-menu {
+      border: 1px solid white;
+      background: rgba(170, 170, 170, 0.7); }
+
+.second-page {
+  background-image: url("../img/secondPage/bg.jpg");
+  width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .second-page .second-page-food {
+    text-align: center; }
+    .second-page .second-page-food h1 {
+      color: #cc9900;
+      margin-top: 110px;
+      font-size: 36px; }
+    .second-page .second-page-food .second-page-divider {
+      margin-top: 15px;
+      margin-bottom: 32px; }
+    .second-page .second-page-food p {
+      color: #4c4c4c;
+      font-size: 16px; }
+    .second-page .second-page-food .second-page-cook {
+      margin-top: 53px;
+      padding-left: 75px; }
+  .second-page .dish-img {
+    margin-top: 75px;
+    margin-bottom: 85px; }
+
+.third-page {
+  background-image: url("../img/thirdPage/bg.jpg");
+  width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .third-page .third-page-ingredients {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    .third-page .third-page-ingredients h1 {
+      padding-top: 80px; }
+    .third-page .third-page-ingredients .third-page-divider {
+      margin-top: 15px;
+      margin-bottom: 30px; }
+    .third-page .third-page-ingredients p {
+      font-size: 16px;
+      padding: 0 80px;
+      margin-bottom: 75px; }
+    .third-page .third-page-ingredients .img-ingredients {
+      margin: 0 15px;
+      margin-bottom: 75px; }
+
+.fourth-page {
+  background-image: url("../img/fourthPage/bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  color: #cc9900; }
+  .fourth-page .container {
+    padding: 100px 0; }
+  .fourth-page h2 {
+    font-size: 36px;
+    text-align: center; }
+  .fourth-page h3 {
+    font-size: 21px; }
+  .fourth-page img {
+    display: block;
+    margin: 0 auto; }
+  .fourth-page .price {
+    float: right; }
+  .fourth-page hr {
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: white;
+    color: white;
+    border: 0 none;
+    -webkit-box-shadow: inset 0 12px 12px -12px rgba(204, 153, 0, 0.9);
+            box-shadow: inset 0 12px 12px -12px rgba(204, 153, 0, 0.9); }
+  .fourth-page p {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: #4c4c4c;
+    margin-bottom: 40px; }
+  .fourth-page .special-word-wrapper {
+    text-align: right; }
+  .fourth-page .special-word {
+    background-image: url("../img/fourthPage/bgSpecial.jpg");
+    padding: 3px 3px 0 3px;
+    color: #f6f6f6; }
+  .fourth-page .special-box {
+    padding: 0 2px;
+    -webkit-box-shadow: -3px 0px 3px 1px #cc9900;
+    box-shadow: -3px 0px 3px 1px #cc9900; }
+    .fourth-page .special-box h3 {
+      margin-top: 0px; }
+
+.fifth-page {
+  background-image: url("../img/fifthPage/bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeate;
+  color: #f6f6f6; }
+  .fifth-page article {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 85px;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    .fifth-page article h2 {
+      font-size: 36px; }
+    .fifth-page article img {
+      margin: 25px 0; }
+    .fifth-page article .quote {
+      font-family: Georgia; }
+    .fifth-page article .quote-phrase {
+      padding-bottom: 45px;
+      font-family: "Gentium Book Basic", serif;
+      font-size: 25px;
+      padding: 0 70px; }
+    .fifth-page article .food-inc {
+      margin-top: 45px;
+      padding-bottom: 100px; }
+
+.sixth-page {
+  background-image: url("../img/sixthPage/bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeate;
+  color: #4c4c4c; }
+  .sixth-page .container {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .sixth-page .divider {
+    margin-top: 15px;
+    margin-bottom: 25px; }
+  .sixth-page .no-padding {
+    padding: 0; }
+  .sixth-page .right-food {
+    padding-top: 0;
+    text-align: center; }
+    .sixth-page .right-food h2 {
+      margin-top: 0;
+      color: #cc9900; }
+    .sixth-page .right-food p {
+      color: #4c4c4c; }
+  .sixth-page form {
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 0;
+    color: #cc9900; }
+    .sixth-page form input::-webkit-input-placeholder {
+      color: #7c7c7c;
+      padding-left: 8px; }
+    .sixth-page form input::-moz-placeholder {
+      color: #7c7c7c;
+      padding-left: 8px; }
+    .sixth-page form input:-ms-input-placeholder {
+      color: #7c7c7c;
+      padding-left: 8px; }
+    .sixth-page form input::placeholder {
+      color: #7c7c7c;
+      padding-left: 8px; }
+  .sixth-page .form-row {
+    margin-bottom: 30px; }
+  .sixth-page .order {
+    margin: 0 auto;
+    padding: 8px 60;
+    display: block;
+    margin-top: 60px;
+    background-color: #c9a131;
+    color: #f6f6f6;
+    border: none;
+    font-size: 16px; }
+
+.seventh-page {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #191919;
+  color: #fefefe;
+  text-align: center; }
+  .seventh-page p {
+    font-size: 14px;
+    font-family: "Lato", sans-serif; }
+  .seventh-page h2 {
+    font-size: 21px; }
+  .seventh-page img {
+    max-width: 100%;
+    margin: 15px 0; }
