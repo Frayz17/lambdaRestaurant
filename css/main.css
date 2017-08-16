@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Yeseva+One");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Gentium+Book+Basic");
 body {
   color: #f6f6f6;
-  font-family: "Yeseva One", cursive; }
+  font-family: "Lato", sans-serif; }
 
 .first-page {
   background-image: url("../img/firstPage/bg.jpg");
@@ -13,49 +10,57 @@ body {
   background-attachment: fixed;
   background-position: center;
   padding-bottom: 140px; }
-  .first-page .col-sm-9 {
-    padding-right: 0px; }
   .first-page .main-navbar {
+    font-family: "Gentium Book Basic", serif;
     min-height: 125px;
     background: rgba(0, 0, 0, 0.4); }
+    .first-page .main-navbar .navbar-collapse {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
     .first-page .main-navbar .navbar-toggle {
       padding-top: 45px; }
-    .first-page .main-navbar .icon-bar {
-      background-color: #f6f6f6; }
+      .first-page .main-navbar .navbar-toggle .icon-bar {
+        background-color: #f6f6f6; }
+    .first-page .main-navbar .navbar .navbar-nav {
+      padding-top: 45px;
+      font-size: 18px; }
+    .first-page .main-navbar .dropdown {
+      list-style-type: none; }
+      .first-page .main-navbar .dropdown .dropdown-toggle {
+        color: #f6f6f6;
+        background: none; }
+      .first-page .main-navbar .dropdown .dropdown-menu {
+        text-align: center;
+        min-width: 85px;
+        background: rgba(0, 0, 0, 0.2); }
+        .first-page .main-navbar .dropdown .dropdown-menu li > a:hover {
+          background: rgba(170, 170, 170, 0.4); }
     .first-page .main-navbar .navbar .navbar-nav > li > a {
       color: #f6f6f6; }
     .first-page .main-navbar .navbar .navbar-nav > li > a:hover {
       background: rgba(170, 170, 170, 0.4); }
     .first-page .main-navbar .navbar .navbar-nav > li > a:focus {
-      background: rgba(170, 170, 170, 0.7); }
-    .first-page .main-navbar .navbar .navbar-nav {
-      padding-top: 45px;
-      font-size: 18px; }
-    .first-page .main-navbar .in {
-      padding-top: 10px;
-      text-align: right;
-      padding-right: 25px; }
-  .first-page .social-icons {
-    min-width: 200px; }
-    .first-page .social-icons a {
-      padding: 5px;
-      margin-right: 0px;
-      margin-top: 50px;
-      float: left; }
-    .first-page .social-icons a:first-child, .first-page .social-icons a:last-child {
-      padding-right: 0px;
-      margin-right: 0px; }
+      background: rgba(170, 170, 170, 0.6); }
   .first-page .jumbotron {
     background: none;
     margin-top: 70px;
     text-align: center; }
     .first-page .jumbotron h1 {
-      font-size: 90px;
+      font-family: "Yeseva One", cursive;
+      font-size: 80px;
       line-height: 130%; }
+    @media screen and (max-width: 768px) {
+      .first-page .jumbotron h1 {
+        font-size: 40px; } }
     .first-page .jumbotron .jumbotron-divider {
       margin-top: 20px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      min-height: 45px;
+      background-image: url("../img/firstPage/divider.png");
+      background-repeat: no-repeat;
+      background-position: center; }
     .first-page .jumbotron .button {
+      font-family: "Lato", sans-serif;
       border: none;
       color: white;
       text-align: center;
@@ -72,6 +77,10 @@ body {
         text-decoration: none; }
     .first-page .jumbotron .button:focus {
       outline: none; }
+    .first-page .jumbotron .button-menu:hover {
+      background: rgba(170, 170, 170, 0.9); }
+    .first-page .jumbotron .button-book:hover {
+      background: rgba(0, 0, 0, 0.9); }
     .first-page .jumbotron .button-book {
       border: 1px solid black;
       background: rgba(0, 0, 0, 0.7); }
@@ -84,9 +93,13 @@ body {
   width: 100%;
   -webkit-background-size: cover;
           background-size: cover; }
+  .second-page .container {
+    padding-top: 40px;
+    padding-bottom: 85px; }
   .second-page .second-page-food {
     text-align: center; }
     .second-page .second-page-food h1 {
+      font-family: "Yeseva One", cursive;
       color: #cc9900;
       margin-top: 110px;
       font-size: 36px; }
@@ -100,20 +113,23 @@ body {
       margin-top: 53px;
       padding-left: 75px; }
   .second-page .dish-img {
-    margin-top: 75px;
-    margin-bottom: 85px; }
+    padding-top: 40px;
+    max-width: 100%; }
 
 .third-page {
   background-image: url("../img/thirdPage/bg.jpg");
-  width: 100%;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
   .third-page .third-page-ingredients {
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
     margin-top: 100px;
     margin-bottom: 100px; }
     .third-page .third-page-ingredients h1 {
+      font-family: "Yeseva One", cursive;
       padding-top: 80px; }
     .third-page .third-page-ingredients .third-page-divider {
       margin-top: 15px;
@@ -134,6 +150,7 @@ body {
   .fourth-page .container {
     padding: 100px 0; }
   .fourth-page h2 {
+    font-family: "Yeseva One", cursive;
     font-size: 36px;
     text-align: center; }
   .fourth-page h3 {
@@ -165,8 +182,8 @@ body {
     color: #f6f6f6; }
   .fourth-page .special-box {
     padding: 0 2px;
-    -webkit-box-shadow: -3px 0px 3px 1px #cc9900;
-    box-shadow: -3px 0px 3px 1px #cc9900; }
+    -webkit-box-shadow: -0px 0px 3px 1px #cc9900;
+    box-shadow: -0px 0px 3px 1px #cc9900; }
     .fourth-page .special-box h3 {
       margin-top: 0px; }
 
@@ -174,7 +191,9 @@ body {
   background-image: url("../img/fifthPage/bg.jpg");
   -webkit-background-size: cover;
           background-size: cover;
-  background-repeat: no-repeate;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   color: #f6f6f6; }
   .fifth-page article {
     text-align: center;
@@ -203,6 +222,9 @@ body {
           background-size: cover;
   background-repeat: no-repeate;
   color: #4c4c4c; }
+  @media screen and (max-width: 1199px) {
+    .sixth-page .sixth-page-img {
+      display: none; } }
   .sixth-page .container {
     padding-top: 100px;
     padding-bottom: 100px; }
@@ -212,6 +234,8 @@ body {
   .sixth-page .no-padding {
     padding: 0; }
   .sixth-page .right-food {
+    max-width: 600px;
+    margin: 0px auto;
     padding-top: 0;
     text-align: center; }
     .sixth-page .right-food h2 {

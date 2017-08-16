@@ -6,6 +6,8 @@
 	<title>Restaurant</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Yeseva+One" rel="stylesheet">
 </head>
 <body>
 
@@ -14,10 +16,11 @@
 	<!-- _______________FIRST PAGE__________________ -->
 	<section class="first-page">
 
+		<!-- navigation bar -->
 		<div class="main-navbar">
 			<div class="container">
 				<div class="row">
-				
+
 					<nav class="navbar">
 					  <div class="container-fluid">
 					    <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,25 +44,32 @@
 					        <li><a href="#">Reviews</a></li>
 					        <li><a href="#">Reservations</a></li>
 					      </ul>
+								
 
-					      <ul class="nav navbar-nav navbar-right">
-					        <li><a href="#"><img src="img/firstPage/twitter.png" alt="twitter"></a></li>
-					        <li><a href="#"><img src="img/firstPage/youtube.png" alt="youtube"></a></li>
-					        <li><a href="#"><img src="img/firstPage/facebook.png" alt="facebook"></a></li>
-					      </ul>
+					      <div class="nav navbar-nav navbar-right">
+									<li class="dropdown navbar-right">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social<span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#"><img src="img/firstPage/twitter.png" alt="twitter"></a></li>
+					            <li><a href="#"><img src="img/firstPage/youtube.png" alt="youtube"></a></li>
+					            <li><a href="#"><img src="img/firstPage/facebook.png" alt="facebook"></a></li>
+					          </ul>
+					        </li>
+					      </div>
+
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 					</nav> <!-- navbar end -->
 				</div> <!-- row end -->
 			</div> <!-- container end -->
-		</div>
-
+		</div> <!-- main-navbar end -->
+		<!-- end navigation bar -->
 
 		<div class="container">
 			<!-- tagline -->
 			<div class="jumbotron">
 				<h1>the right ingredients<br>for the right food</h1>
-				<div class="jumbotron-divider"><img src="img/firstPage/divider.png"></div>
+				<div class="jumbotron-divider"><!-- <img src="img/firstPage/divider.png"> --></div>
 				<button class="button button-book"><a href="#" role="button">book table</a></button>
 				<button class="button button-menu"><a href="#" role="button">see the menu</a></button>
 			</div>
@@ -72,8 +82,8 @@
 	<section class="second-page">
 		<div class="container">
 			<div class="row">
-			<div class="col-sm-offset-1"></div>
-				<div class="col-sm-4">
+
+				<div class="col-md-4">
 					<article class="second-page-food">
 						<h1>Just the right food</h1>
 						<div class="second-page-divider"><img class="" src="img/secondPage/divider.png" alt=""></div>
@@ -81,10 +91,12 @@
 						<img class="second-page-cook" src="img/secondPage/cook.png" alt="">
 					</article>
 				</div>
-				<div class="col-sm-offset-2"></div>
-				<div class="col-sm-5">
+
+
+				<div class="col-12 col-md-8">
 					<img class="dish-img" src="img/secondPage/dish.png" alt="dish">
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -95,8 +107,8 @@
 	<section class="third-page">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6"></div>
-				<div class="col-sm-6">
+				<div class="col-md-6"></div>
+				<div class="col-md-6">
 					<article class="third-page-ingredients">
 						<h1>Fine Ingredients</h1>
 						<div class="third-page-divider"><img class="" src="img/thirdPage/divider.png" alt=""></div>
@@ -233,9 +245,14 @@
 <section class="sixth-page">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-3"><img src="img/sixthPage/saucer.jpg" alt="saucer"></div>
-			<div class="col-sm-3"><img src="img/sixthPage/cherry.jpg" alt="cherry"></div>
-			<div class="col-sm-4 col-sm-offset-1 no-padding">
+			<div class="col-lg-3">
+			<img class="sixth-page-img" height="507" width="270" src="img/sixthPage/saucer.jpg" alt="saucer">
+			</div>
+			<div class="col-lg-3">
+			<img class="sixth-page-img" height="507" width="270" src="img/sixthPage/cherry.jpg" alt="cherry">
+			</div>
+			
+			<div class="col-12 col-lg-4 col-sm-offset-1 no-padding">
 				<article class="right-food">
 					<h2>Just the right food</h2>
 					<img class="divider" src="img/sixthPage/divider.png" alt="">
@@ -244,31 +261,48 @@
 					
 					<form action="#">
 						<div class="row form-row">					
-							<div class="col-sm-6">
-								<label for="name">Name</label>
-								<input type="text" name="name" placeholder="your name *">
+							<div class="col-12 col-md-6">
+
+							  <div class="form-group">
+							    <label for="text">Name:</label>
+							    <input type="text" class="form-control" id="name">
+							  </div>
+						
 							</div>
-							<div class="col-sm-6">
-								<label for="email">Email</label>
-								<input type="email" name="email" placeholder="your email *">
+							<div class="col-12 col-md-6">
+
+								<div class="form-group">
+							    <label for="text">Email:</label>
+							    <input type="email" class="form-control" id="email">
+							  </div>
+
 							</div>
 						</div>
-						<div class="row form-row"">
-							<div class="col-sm-6">
-								<label for="name">Date</label>
-								<input type="text" name="date" placeholder="date *">
+						<div class="row form-row">
+							<div class="col-12 col-md-6">
+
+								<div class="form-group">
+							    <label for="text">Date:</label>
+							    <input type="text" class="form-control" id="date">
+							  </div>
+
 							</div>
-							<div class="col-sm-6">
-								<label for="party-number">Party Number</label>
-								<input type="text" name="party-number" placeholder="party number *">								
+							<div class="col-12 col-md-6">
+	
+                <div class="form-group">
+							    <label for="text">Party Number:</label>
+							    <input type="text" class="form-control" id="party-number">
+							  </div>
+
 							</div>
 						</div>
 						<input type="submit" value="Book Now!" class="order">		
 					</form>
-					
-
+				
 				</article>
 			</div>
+
+
 		</div>
 	</div>
 </section>

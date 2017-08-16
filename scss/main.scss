@@ -4,16 +4,20 @@ $primary-color-black: #4c4c4c;
 $primary-color-gold: #cc9900;
 
 // FONTS
-@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
-$yeseva: 'Yeseva One', cursive;
-$lato: 'Lato', sans-serif;
-$Gentium: 'Gentium Book Basic', serif;
+// @import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+// @import url('https://fonts.googleapis.com/css?family=Lato');
+// @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+$yeseva:   'Yeseva One', cursive;
+$lato:     'Lato', sans-serif;
+$gentium:  'Gentium Book Basic', serif;
+
+// font-family: 'Gentium Book Basic', serif;
+// font-family: 'Yeseva One', cursive;
+// font-family: 'Lato', sans-serif;
 
 body {
 	color: $primary-color-white;
-	font-family:	$yeseva;
+	font-family:	$lato;
 }
 
 
@@ -21,96 +25,103 @@ body {
 // -------------------FIRST PAGE---------------------
 
 .first-page {
+	// bacground settings
 	background-image: url("../img/firstPage/bg.jpg");
 	background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
+
 	padding-bottom: 140px;
 
-  .col-sm-9 {
-  	padding-right: 0px;
-  }
+	// navbar settings
 	.main-navbar {
+		font-family: $gentium;
 		min-height: 125px;
 		background: rgba(0, 0, 0, 0.4);
 
+		// remmove horizontal line beetwen nav-top and nav-responsive parts
+		.navbar-collapse {
+				box-shadow: none;
+		}
+
+
+		// humburger settings
 		.navbar-toggle {
 			padding-top: 45px;
-		}
 
-		.icon-bar {
+			.icon-bar {
 			background-color: $primary-color-white;
-		}
-		.navbar .navbar-nav > li > a {
-    	color: $primary-color-white;
-		}
-
-		.navbar .navbar-nav > li > a:hover {
-    	background: rgba(170, 170, 170, 0.4);
-		}
-
-		.navbar .navbar-nav > li > a:focus {
-    	background: rgba(170, 170, 170, 0.7);
+			}
 		}
 
 		.navbar .navbar-nav {
 			padding-top: 45px;
 			font-size: 18px;
 		}
-		.in {
-			padding-top: 10px;
-			text-align: right;
-			padding-right: 25px;
+
+
+		// dropdown from hamburger settings
+		.dropdown {
+			list-style-type: none;
+			.dropdown-toggle {
+				color: $primary-color-white;
+				background: none;
+			}
+			.dropdown-menu {
+				text-align: center;
+				min-width: 85px;
+				background: rgba(0, 0, 0, 0.2);
+
+				li > a:hover {
+					background: rgba(170, 170, 170, 0.4);
+				}
+			}
 		}
-		// margin-left: 10%;
-  //   padding: 0px;
-  //   overflow: hidden;
-  //   align: center;
-	
-
-		// li {
-		// 	font-size: 21px;
-		// 	padding: 20px;
-		// 	padding-top: 50px;
-		// 	float: left;
-		// }
-		// li:last-child {
- 	// 	 padding-right: 0px;
- 	// 	 margin-right: 0px;
-		// }
-	}
 
 
-	.social-icons {
-		min-width: 200px;
-		a {
-			padding: 5px;
-			margin-right: 0px;
-			margin-top: 50px;
-			float: left;
+		// settings for color of links in navbar
+		.navbar .navbar-nav > li > a   {
+    	color: $primary-color-white;
 		}
-		a:first-child, a:last-child  {
- 		 padding-right: 0px;
- 		 margin-right: 0px;
+		.navbar .navbar-nav > li > a:hover {
+    	background: rgba(170, 170, 170, 0.4);
+		}
+
+		.navbar .navbar-nav > li > a:focus {
+    	background: rgba(170, 170, 170, 0.6);
 		}
 	}
 
+
+  // tagline settings
 	.jumbotron {
 		background: none;
 		margin-top: 70px;
 		text-align: center;
 
 		h1 {
-			font-size: 90px;
+			font-family: $yeseva;
+			font-size: 80px;
 			line-height: 130%;
 		}
+		@media screen and (max-width: 768px) {
+	    h1 {
+	        font-size: 40px;
+	    }
+}
+
 		.jumbotron-divider {
 			margin-top: 20px;
 			margin-bottom: 30px;
+			min-height: 45px;
+			background-image: url("../img/firstPage/divider.png");
+			background-repeat: no-repeat;
+		  background-position: center;
 		}
 		
 		.button {
+			font-family: $lato;
    		border: none;
     	color: white;
     	text-align: center;
@@ -131,10 +142,20 @@ body {
 
 		.button:focus {
 	    	outline: none;
+	    	
 	  }
+
+	  .button-menu:hover {
+				background: rgba(170, 170, 170, 0.9);
+		}
+
+		.button-book:hover {
+				background: rgba(0, 0, 0, 0.9);
+		}
+
 		.button-book {
 			border: 1px solid black;
-			//padding: 15px 32px;
+			// padding: 15px 32px;
 			background: rgba(0, 0, 0, 0.7);
 		}
 		.button-menu {
@@ -155,10 +176,16 @@ body {
 	width: 100%;
 	background-size: cover;
 
+	.container {
+		padding-top: 40px;
+		padding-bottom: 85px;
+	}
+
 	.second-page-food {
 		text-align: center;
 
 		h1 {
+			font-family: $yeseva;
 			color: $primary-color-gold;
 			margin-top: 110px;
 			font-size: 36px;
@@ -177,8 +204,9 @@ body {
 		}
   }
 	.dish-img {
-		margin-top: 75px;
-		margin-bottom: 85px;
+		// text-align: center;
+		padding-top: 40px;
+		max-width: 100%;
 	}
 }
 
@@ -188,8 +216,10 @@ body {
 
 .third-page {
 	background-image: url("../img/thirdPage/bg.jpg");
-	width: 100%;
 	background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
 	.third-page-ingredients {
 		text-align: center;
@@ -198,6 +228,7 @@ body {
 		margin-bottom: 100px;
 
 		h1{
+			font-family: $yeseva;
 			padding-top: 80px;
 		}
 
@@ -233,6 +264,7 @@ body {
 	}
 
 	h2 {
+		font-family: $yeseva;
 		font-size: 36px;
 		text-align: center;
 	}
@@ -279,9 +311,9 @@ body {
 			margin-top: 0px;
 		}
 		padding: 0 2px;
-		-webkit-box-shadow:-3px 0px 3px 1px #cc9900 ;
-		-moz-box-shadow:-3px 0px 3px 1px #cc9900 ;
-		box-shadow:-3px 0px 3px 1px #cc9900 ;
+		-webkit-box-shadow:-0px 0px 3px 1px #cc9900 ;
+		-moz-box-shadow:-0px 0px 3px 1px #cc9900 ;
+		box-shadow:-0px 0px 3px 1px #cc9900 ;
 
 	}
 
@@ -294,7 +326,10 @@ body {
 .fifth-page {
 	background-image: url("../img/fifthPage/bg.jpg");
 	background-size: cover;
-	background-repeat: no-repeate;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  
 	color: $primary-color-white;
 	article {
 		text-align: center;
@@ -314,7 +349,7 @@ body {
 		}
 		.quote-phrase {
 			padding-bottom: 45px;
-			font-family: $Gentium;
+			font-family: $gentium;
 			font-size: 25px;
 			padding: 0 70px;
 		}
@@ -334,6 +369,16 @@ body {
 	background-size: cover;
 	background-repeat: no-repeate;
 	color: $primary-color-black;
+
+	@media screen and (max-width: 1199px) {
+    .sixth-page-img {
+			display: none;
+		}
+	}
+
+
+	
+
 	.container {
 		padding-top: 100px;
 		padding-bottom: 100px;
@@ -348,6 +393,8 @@ body {
 	}
 
 	.right-food {
+		max-width: 600px;
+		margin: 0px auto;
 		padding-top: 0;
 		text-align: center;
 		h2 {
@@ -369,6 +416,12 @@ body {
 				padding-left: 8px;
 				
 			}
+			
+			// .form-group > input {
+			// 	margin: 0px auto;
+			// 	max-width: 200px;
+			// }
+
 	}
 
 	.form-row {
